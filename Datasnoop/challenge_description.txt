@@ -1,0 +1,16 @@
+Title: Data Snoop
+
+Description:
+The network admin believes there might be some suspicious traffic coming from the network. He's not entirely sure which host or what, and needs your help. Please find the two flags, both in the format of FLAG{answer}. One flag is the host sending the suspicious traffic, the other is hidden in the traffic itself.
+
+Objective:
+1. Analyze the provided PCAP file to identify suspicious traffic.
+3. Determine the flags from the suspicious traffic.
+
+Hints:
+- Look for any odd looking traffic, filter out known good traffic.
+
+Files Included:
+1. `traffic_capture.pcap` - The network traffic capture file.
+2. `challenge_description.txt` - This file with challenge details.
+3. `solution.txt` - The answers
