@@ -1,0 +1,12 @@
+Title: Data Snoop - Solution Guide
+
+1. Open the provided PCAP file in Wireshark or any other network analysis tool.
+2. Filter DNS traffic using the display filter `dns`.
+3. Identify DNS requests with unusual domains, such as those containing base64-encoded data.
+4. Copy the base64-encoded data from the DNS queries.
+5. Decode the base64 data using a base64 decoder (e.g., `echo -n 'base64_string' | base64 -d`).
+6. The decoded data should reveal the flag, "the flag is FLAG{3xf1l_d@ng3r}". The traffic is coming from FLAG{192.168.70.11}
+
+Additional Tips:
+- You might need to search through multiple DNS requests to find all relevant payloads.
+- Ensure that the decoded data matches the expected flag format.
